@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-2-tenant/load-app-88b0bfdc-876f-4c59-9367-1483da829d5a/devfile-sample@sha256:14dbf6ed21c0974d00cd25020c940a652f3a692f44a379ebe89b0bde4ff21e1b
+        name: my-nodejs
+        resources: {}
+status: {}
